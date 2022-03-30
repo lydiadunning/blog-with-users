@@ -60,7 +60,7 @@ class BlogComment(db.Model):
     author = relationship("User", back_populates="comments")
 
 
-db.create_all()
+# db.create_all()
 
 login_manager = LoginManager()
 login_manager.init_app(app)
